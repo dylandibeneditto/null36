@@ -1,0 +1,175 @@
+units:
+  p: 4
+  px: u+p
+  o: 0.5px
+points:
+  key.tags:
+    - key
+  zones:
+    matrix:
+      anchor:
+        shift: [150, -150] # Fix KiCad placement
+      columns:
+        pinky:
+        ring:
+          key.stagger: u
+        middle:
+          key.stagger: u/4
+        index:
+          key.stagger: -u/2
+        inner:
+          key.stagger: -u/4
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-u,-u]
+      columns:
+        near:
+        home:
+          key.rotate: -15
+          key.stagger: -u/8
+          key.spread: 22
+        far:
+          key.rotate: -30
+          key.stagger: -u/2
+          key.spread: 21
+      rows:
+        thumb:
+    mcu:
+      key.tags:
+        - helper
+      anchor:
+        - ref: matrix_inner_top
+          shift: [u+2, -u/2+5.25+p]
+
+
+
+
+outlines:
+  _raw:
+    - what: rectangle
+      where: true
+      size: [u, u]
+  _keys:
+    - what: rectangle
+      where: [key]
+      size: 18
+      fillet: 3
+  _board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_pinky_top
+          shift: [-o, o]
+        - ref: matrix_pinky_bottom
+          shift: [-o, -o]
+        - ref: matrix_pinky_bottom
+          shift: [3o, -o]
+        - ref: thumbfan_near_thumb
+          shift: [-o,-o]
+        - ref: thumbfan_far_thumb
+          shift: [-o,-o]
+        - ref: thumbfan_far_thumb
+          shift: [o,-o]
+        - ref: thumbfan_far_thumb
+          shift: [o,o]
+        - ref: mcu
+          shift: [o,-5o]
+        - ref: mcu
+          shift: [o, o+p+1]
+        - ref: matrix_index_top
+          shift: [-o+p,o]
+        - ref: matrix_middle_top
+          shift: [o,o]
+        - ref: matrix_middle_top
+          shift: [-o,o]
+        - ref: matrix_ring_top
+          shift: [o-p,o]
+        - ref: matrix_ring_top
+          shift: [-o,o]
+        - ref: matrix_pinky_top
+          shift: [o-p,o]
+        
+      fillet: p/2
+  preview:
+    - what: outline
+      name: _board
+      operation: stack
+    - what: rectangle
+      where: [mcu]
+      size: [18,33]
+    - what: outline
+      name: _keys
+      operation: stack
+
+
+
+pcbs:
+  test:
+    template: kicad8
+    outlines:
+      main:
+        outline: preview
+    footprints:
+      keys:
+        what: ceoloide/switch_mx
+        where: [key]
+        params:
+          from: GND
+          to: "{{name}}"
+          reversible: true
+          hotswap: true
+          include_keycap: true
+      mcu:
+        what: ceoloide/mcu_supermini_nrf52840
+        where: mcu
+        params:
+          reversible: true
+          only_required_jumpers: true
+          P10: "r0"
+          P3: "r1"
+          P4: "r2"
+          P5: "r3"
+          P2: "c1"
+          P15: "c2"
+          P18: "c3"
+          P16: "c4"
+          P8: "c5"
+          P9: "c6"
+          P6: "DA"
+          P7: "CL"
+          P14: "CS"
+          P19_label: " "
+          P20_label: " "
+          P21_label: " "
+          use_rectangular_jumpers: false
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: mcu
+        params:
+          reversible: true
+        adjust:
+          shift: [-6,-25]
+          rotate: 90
+      on_off_switch:
+        what: ceoloide/power_switch_smd_side
+        where: matrix_inner_top
+        params:
+          from: BAT_P
+          to: RAW
+          reversible: true
+        adjust:
+          shift: [0, u/2+1+p]
+          rotate: 90
+      reset_switch:
+        what: ceoloide/reset_switch_tht_top
+        where: mcu
+        params:
+          reversible: true
+        adjust:
+          shift: [6.75,-25]
+          rotate: 90

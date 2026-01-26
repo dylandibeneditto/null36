@@ -1,5 +1,5 @@
 units:
-  p: 4
+  p: 2
   px: u+p
   o: 0.5px
 points:
@@ -10,26 +10,31 @@ points:
       anchor:
         shift: [150, -150] # Fix KiCad placement
       columns:
-        pinky:
-        ring:
-          key.stagger: u
-        middle:
-          key.stagger: u/4
-        index:
-          key.stagger: -u/2
-        inner:
-          key.stagger: -u/4
+        pin:
+          key:
+        ri:
+          key:
+            stagger: u
+        mi:
+          key:
+            stagger: u/4
+        ind:
+          key:
+            stagger: -u/2
+        inn:
+          key:
+            stagger: -u/4
       rows:
-        bottom:
-        home:
-        top:
+        bo:
+        ho:
+        to:
     thumbfan:
       anchor:
-        ref: matrix_inner_bottom
+        ref: matrix_inn_bo
         shift: [-u,-u]
       columns:
-        near:
-        home:
+        ind:
+        inn:
           key.rotate: -15
           key.stagger: -u/8
           key.spread: 22
@@ -38,14 +43,57 @@ points:
           key.stagger: -u/2
           key.spread: 21
       rows:
-        thumb:
+        th:
     mcu:
       key.tags:
         - helper
+        - mcu
       anchor:
-        - ref: matrix_inner_top
-          shift: [u+2, -u/2+5.25+p]
+        - ref: matrix_inn_to
+          shift: [u+2, -u/2+p+1]
 
+    screw_1:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_pin_bo
+          - ref: matrix_ri_bo
+    screw_2:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_ri_ho
+          - ref: matrix_mi_to
+    screw_3:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: thumbfan_far_th
+          - ref: thumbfan_inn_th
+        shift: [0,u/2]
+    screw_4:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_inn_to
+          - ref: matrix_inn_ho
+        shift: [u/2-2,0]
+    screw_5:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_ind_bo
+        shift: [-u/2,-u/2]
 
 
 
@@ -63,38 +111,46 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        - ref: matrix_pinky_top
+        - ref: matrix_pin_to
           shift: [-o, o]
-        - ref: matrix_pinky_bottom
+        - ref: matrix_pin_bo
           shift: [-o, -o]
-        - ref: matrix_pinky_bottom
+        - ref: matrix_pin_bo
           shift: [3o, -o]
-        - ref: thumbfan_near_thumb
+        - ref: thumbfan_ind_th
           shift: [-o,-o]
-        - ref: thumbfan_far_thumb
+        - ref: thumbfan_far_th
           shift: [-o,-o]
-        - ref: thumbfan_far_thumb
+        - ref: thumbfan_far_th
           shift: [o,-o]
-        - ref: thumbfan_far_thumb
+        - ref: thumbfan_far_th
           shift: [o,o]
         - ref: mcu
           shift: [o,-5o]
         - ref: mcu
-          shift: [o, o+p+1]
-        - ref: matrix_index_top
-          shift: [-o+p,o]
-        - ref: matrix_middle_top
+          shift: [o, o+4.5+p]
+        - ref: matrix_inn_to
+          shift: [-o+p, o]
+        - ref: matrix_ind_to
           shift: [o,o]
-        - ref: matrix_middle_top
+        - ref: matrix_ind_to
+          shift: [-o+p,o]
+        - ref: matrix_mi_to
+          shift: [o,o]
+        - ref: matrix_mi_to
           shift: [-o,o]
-        - ref: matrix_ring_top
+        - ref: matrix_ri_to
           shift: [o-p,o]
-        - ref: matrix_ring_top
+        - ref: matrix_ri_to
           shift: [-o,o]
-        - ref: matrix_pinky_top
+        - ref: matrix_pin_to
           shift: [o-p,o]
         
-      fillet: p/2
+      fillet: 2
+  _screws:
+    - what: circle
+      where: [screw]
+      radius: 4.3/2
   preview:
     - what: outline
       name: _board
@@ -103,73 +159,99 @@ outlines:
       where: [mcu]
       size: [18,33]
     - what: outline
+      name: _screws
+      operation: stack
+    - what: outline
       name: _keys
       operation: stack
 
 
 
 pcbs:
-  test:
+  null36:
     template: kicad8
     outlines:
       main:
-        outline: preview
+        outline: _board
     footprints:
       keys:
         what: ceoloide/switch_mx
         where: [key]
         params:
-          from: GND
-          to: "{{name}}"
+          from: "{{colrow}}"
+          to: "{{col.name}}"
           reversible: true
           hotswap: true
-          include_keycap: true
+      diodes:
+        what: ceoloide/diode_tht_sod123
+        where: /key/
+        params:
+          from: "{{colrow}}"
+          to: "{{row}}"
+          reversible: true
+        adjust:
+          shift: [5.7,-3]
+          rotate: 180
+      screen:
+        what: ceoloide/display_ssd1306
+        where: mcu
+        params:
+          side: "F"
+          SDA: DA
+          SCL: CL
+        adjust:
+          shift: [0,-4]
       mcu:
         what: ceoloide/mcu_supermini_nrf52840
         where: mcu
         params:
           reversible: true
           only_required_jumpers: true
-          P10: "r0"
-          P3: "r1"
-          P4: "r2"
-          P5: "r3"
-          P2: "c1"
-          P15: "c2"
-          P18: "c3"
-          P16: "c4"
-          P8: "c5"
-          P9: "c6"
+          use_rectangular_jumpers: false
+          P10: "th"
+          P3: "to"
+          P4: "ho"
+          P5: "bo"
+          P2: "pin"
+          P15: "mi"
+          P18: "ri"
+          P16: "ind"
+          P8: "inn"
+          P9: "far"
           P6: "DA"
           P7: "CL"
           P14: "CS"
           P19_label: " "
           P20_label: " "
           P21_label: " "
-          use_rectangular_jumpers: false
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: mcu
         params:
           reversible: true
         adjust:
-          shift: [-6,-25]
+          shift: [-5,-30]
           rotate: 90
       on_off_switch:
         what: ceoloide/power_switch_smd_side
-        where: matrix_inner_top
+        where: mcu
         params:
           from: BAT_P
           to: RAW
           reversible: true
         adjust:
-          shift: [0, u/2+1+p]
-          rotate: 90
+          shift: [5+p, -30-3u/4]
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where: mcu
         params:
           reversible: true
         adjust:
-          shift: [6.75,-25]
+          shift: [7,-30]
           rotate: 90
+      m2_screws:
+        what: ceoloide/mounting_hole_npth
+        where: [screw]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2

@@ -196,6 +196,7 @@ pcbs:
         what: ceoloide/display_ssd1306
         where: mcu
         params:
+          reversible: true
           side: "F"
           SDA: DA
           SCL: CL

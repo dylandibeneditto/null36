@@ -1,0 +1,446 @@
+** Drc report for v2.kicad_pcb **
+** Created on 2026-01-25T23:22:44-0500 **
+
+** Found 83 DRC violations **
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(81.6900 mm, 111.4600 mm): NPTH pad of S1
+    @(82.9600 mm, 108.9200 mm): NPTH pad of S1
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(89.3100 mm, 111.4600 mm): NPTH pad of S1
+    @(88.0400 mm, 108.9200 mm): NPTH pad of S1
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(82.9600 mm, 89.9200 mm): NPTH pad of S2
+    @(81.6900 mm, 92.4600 mm): NPTH pad of S2
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(88.0400 mm, 89.9200 mm): NPTH pad of S2
+    @(89.3100 mm, 92.4600 mm): NPTH pad of S2
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(81.6900 mm, 73.4600 mm): NPTH pad of S3
+    @(82.9600 mm, 70.9200 mm): NPTH pad of S3
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(88.0400 mm, 70.9200 mm): NPTH pad of S3
+    @(89.3100 mm, 73.4600 mm): NPTH pad of S3
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(101.9600 mm, 89.9200 mm): NPTH pad of S4
+    @(100.6900 mm, 92.4600 mm): NPTH pad of S4
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(107.0400 mm, 89.9200 mm): NPTH pad of S4
+    @(108.3100 mm, 92.4600 mm): NPTH pad of S4
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(100.6900 mm, 73.4600 mm): NPTH pad of S5
+    @(101.9600 mm, 70.9200 mm): NPTH pad of S5
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(107.0400 mm, 70.9200 mm): NPTH pad of S5
+    @(108.3100 mm, 73.4600 mm): NPTH pad of S5
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(101.9600 mm, 51.9200 mm): NPTH pad of S6
+    @(100.6900 mm, 54.4600 mm): NPTH pad of S6
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(108.3100 mm, 54.4600 mm): NPTH pad of S6
+    @(107.0400 mm, 51.9200 mm): NPTH pad of S6
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(119.6900 mm, 87.7100 mm): NPTH pad of S7
+    @(120.9600 mm, 85.1700 mm): NPTH pad of S7
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(127.3100 mm, 87.7100 mm): NPTH pad of S7
+    @(126.0400 mm, 85.1700 mm): NPTH pad of S7
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(119.6900 mm, 68.7100 mm): NPTH pad of S8
+    @(120.9600 mm, 66.1700 mm): NPTH pad of S8
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(126.0400 mm, 66.1700 mm): NPTH pad of S8
+    @(127.3100 mm, 68.7100 mm): NPTH pad of S8
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(120.9600 mm, 47.1700 mm): NPTH pad of S9
+    @(119.6900 mm, 49.7100 mm): NPTH pad of S9
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(126.0400 mm, 47.1700 mm): NPTH pad of S9
+    @(127.3100 mm, 49.7100 mm): NPTH pad of S9
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(138.6900 mm, 97.2100 mm): NPTH pad of S10
+    @(139.9600 mm, 94.6700 mm): NPTH pad of S10
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(145.0400 mm, 94.6700 mm): NPTH pad of S10
+    @(146.3100 mm, 97.2100 mm): NPTH pad of S10
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(139.9600 mm, 75.6700 mm): NPTH pad of S11
+    @(138.6900 mm, 78.2100 mm): NPTH pad of S11
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(146.3100 mm, 78.2100 mm): NPTH pad of S11
+    @(145.0400 mm, 75.6700 mm): NPTH pad of S11
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(138.6900 mm, 59.2100 mm): NPTH pad of S12
+    @(139.9600 mm, 56.6700 mm): NPTH pad of S12
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(146.3100 mm, 59.2100 mm): NPTH pad of S12
+    @(145.0400 mm, 56.6700 mm): NPTH pad of S12
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(157.6900 mm, 101.9600 mm): NPTH pad of S13
+    @(158.9600 mm, 99.4200 mm): NPTH pad of S13
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(164.0400 mm, 99.4200 mm): NPTH pad of S13
+    @(165.3100 mm, 101.9600 mm): NPTH pad of S13
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(157.6900 mm, 82.9600 mm): NPTH pad of S14
+    @(158.9600 mm, 80.4200 mm): NPTH pad of S14
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(164.0400 mm, 80.4200 mm): NPTH pad of S14
+    @(165.3100 mm, 82.9600 mm): NPTH pad of S14
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(157.6900 mm, 63.9600 mm): NPTH pad of S15
+    @(158.9600 mm, 61.4200 mm): NPTH pad of S15
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(164.0400 mm, 61.4200 mm): NPTH pad of S15
+    @(165.3100 mm, 63.9600 mm): NPTH pad of S15
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(139.9600 mm, 118.4200 mm): NPTH pad of S16
+    @(138.6900 mm, 120.9600 mm): NPTH pad of S16
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(145.0400 mm, 118.4200 mm): NPTH pad of S16
+    @(146.3100 mm, 120.9600 mm): NPTH pad of S16
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(161.4772 mm, 122.4354 mm): NPTH pad of S17
+    @(163.3613 mm, 120.3107 mm): NPTH pad of S17
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(168.2683 mm, 121.6255 mm): NPTH pad of S17
+    @(168.8376 mm, 124.4076 mm): NPTH pad of S17
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(183.4704 mm, 131.2703 mm): NPTH pad of S18
+    @(185.8403 mm, 129.7056 mm): NPTH pad of S18
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(190.2397 mm, 132.2456 mm): NPTH pad of S18
+    @(190.0696 mm, 135.0803 mm): NPTH pad of S18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(85.5000 mm, 114.0000 mm): Footprint S1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(85.5000 mm, 95.0000 mm): Footprint S2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(85.5000 mm, 76.0000 mm): Footprint S3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(104.5000 mm, 95.0000 mm): Footprint S4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(104.5000 mm, 76.0000 mm): Footprint S5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(104.5000 mm, 57.0000 mm): Footprint S6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(123.5000 mm, 90.2500 mm): Footprint S7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(123.5000 mm, 71.2500 mm): Footprint S8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(123.5000 mm, 52.2500 mm): Footprint S9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(142.5000 mm, 99.7500 mm): Footprint S10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(142.5000 mm, 80.7500 mm): Footprint S11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(142.5000 mm, 61.7500 mm): Footprint S12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(161.5000 mm, 104.5000 mm): Footprint S13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(161.5000 mm, 85.5000 mm): Footprint S14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(161.5000 mm, 66.5000 mm): Footprint S15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(142.5000 mm, 123.5000 mm): Footprint S16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(164.5000 mm, 125.8750 mm): Footprint S17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(185.5000 mm, 135.3750 mm): Footprint S18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(91.2000 mm, 117.0000 mm): Footprint D1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(91.2000 mm, 98.0000 mm): Footprint D2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(91.2000 mm, 79.0000 mm): Footprint D3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(110.2000 mm, 98.0000 mm): Footprint D4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(110.2000 mm, 79.0000 mm): Footprint D5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(110.2000 mm, 60.0000 mm): Footprint D6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(129.2000 mm, 93.2500 mm): Footprint D7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(129.2000 mm, 74.2500 mm): Footprint D8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(129.2000 mm, 55.2500 mm): Footprint D9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(148.2000 mm, 102.7500 mm): Footprint D10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(148.2000 mm, 83.7500 mm): Footprint D11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(148.2000 mm, 64.7500 mm): Footprint D12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(167.2000 mm, 107.5000 mm): Footprint D13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(167.2000 mm, 88.5000 mm): Footprint D14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(167.2000 mm, 69.5000 mm): Footprint D15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(148.2000 mm, 126.5000 mm): Footprint D16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(169.2293 mm, 130.2480 mm): Footprint D17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(188.9363 mm, 140.8231 mm): Footprint D18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(182.5000 mm, 73.0000 mm): Footprint MCU1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(177.5000 mm, 103.0000 mm): Footprint JST1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(189.5000 mm, 117.2500 mm): Footprint PWR1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(189.5000 mm, 103.0000 mm): Footprint RST1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(95.0000 mm, 104.5000 mm): Footprint MH1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(114.0000 mm, 64.1250 mm): Footprint MH2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(178.6355 mm, 121.8481 mm): Footprint MH3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(169.0000 mm, 76.0000 mm): Footprint MH4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(133.0000 mm, 109.2500 mm): Footprint MH5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'.
+    Local override; warning
+    @(182.5000 mm, 77.0000 mm): Footprint DISP1
+[copper_sliver]: Copper sliver (B.Cu)
+    Local override; warning
+
+** Found 38 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5500 mm, 117.0000 mm): Pad 2 [pin_bo] of D1 on F.Cu
+    @(89.5500 mm, 117.0000 mm): Pad 2 [pin_bo] of D1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5500 mm, 98.0000 mm): Pad 2 [pin_ho] of D2 on F.Cu
+    @(89.5500 mm, 98.0000 mm): Pad 2 [pin_ho] of D2 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5500 mm, 98.0000 mm): Pad 2 [pin_ho] of D2 on F.Cu
+    @(92.5850 mm, 90.9600 mm): Track [pin_ho] on F.Cu, length 1.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5500 mm, 79.0000 mm): Pad 2 [pin_to] of D3 on F.Cu
+    @(89.5500 mm, 79.0000 mm): Pad 2 [pin_to] of D3 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.5500 mm, 98.0000 mm): Pad 2 [ri_bo] of D4 on F.Cu
+    @(108.5500 mm, 98.0000 mm): Pad 2 [ri_bo] of D4 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.5500 mm, 79.0000 mm): Pad 2 [ri_ho] of D5 on F.Cu
+    @(108.5500 mm, 79.0000 mm): Pad 2 [ri_ho] of D5 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.5500 mm, 60.0000 mm): Pad 2 [ri_to] of D6 on B.Cu
+    @(108.5500 mm, 60.0000 mm): Track [ri_to] on F.Cu, length 4.2921 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.5500 mm, 93.2500 mm): Pad 2 [mi_bo] of D7 on F.Cu
+    @(127.5500 mm, 93.2500 mm): Pad 2 [mi_bo] of D7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.5500 mm, 74.2500 mm): Pad 2 [mi_ho] of D8 on F.Cu
+    @(127.5500 mm, 74.2500 mm): Pad 2 [mi_ho] of D8 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.5500 mm, 55.2500 mm): Pad 2 [mi_to] of D9 on F.Cu
+    @(127.5500 mm, 55.2500 mm): Pad 2 [mi_to] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.5500 mm, 102.7500 mm): Pad 2 [ind_bo] of D10 on F.Cu
+    @(146.5500 mm, 102.7500 mm): Pad 2 [ind_bo] of D10 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.5500 mm, 83.7500 mm): Pad 2 [ind_ho] of D11 on B.Cu
+    @(146.5500 mm, 83.7500 mm): Track [ind_ho] on F.Cu, length 4.2921 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.5500 mm, 64.7500 mm): Pad 2 [ind_to] of D12 on F.Cu
+    @(146.5500 mm, 64.7500 mm): Pad 2 [ind_to] of D12 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(165.5500 mm, 107.5000 mm): Pad 2 [inn_bo] of D13 on F.Cu
+    @(165.5500 mm, 107.5000 mm): Pad 2 [inn_bo] of D13 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(165.5500 mm, 88.5000 mm): Pad 2 [inn_ho] of D14 on F.Cu
+    @(165.5500 mm, 88.5000 mm): Pad 2 [inn_ho] of D14 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(165.5500 mm, 69.5000 mm): Pad 2 [inn_to] of D15 on F.Cu
+    @(165.5500 mm, 69.5000 mm): Pad 2 [inn_to] of D15 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.5500 mm, 126.5000 mm): Pad 2 [ind_th] of D16 on F.Cu
+    @(146.5500 mm, 126.5000 mm): Pad 2 [ind_th] of D16 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(167.6355 mm, 129.8210 mm): Pad 2 [inn_th] of D17 on F.Cu
+    @(167.6355 mm, 129.8210 mm): Pad 2 [inn_th] of D17 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(187.5074 mm, 139.9981 mm): Pad 2 [far_th] of D18 on F.Cu
+    @(187.5074 mm, 139.9981 mm): Pad 2 [far_th] of D18 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.8500 mm, 117.0000 mm): Pad 1 [bo] of D1 on B.Cu
+    @(111.8500 mm, 98.0000 mm): Track [bo] on F.Cu, length 26.8701 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.8500 mm, 98.0000 mm): Pad 1 [bo] of D4 on B.Cu
+    @(126.1000 mm, 98.0000 mm): Track [bo] on F.Cu, length 14.2500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.8500 mm, 93.2500 mm): Pad 1 [bo] of D7 on B.Cu
+    @(130.8500 mm, 93.2500 mm): Track [bo] on F.Cu, length 1.7699 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.8500 mm, 102.7500 mm): Pad 1 [bo] of D10 on B.Cu
+    @(148.9490 mm, 103.6510 mm): Track [bo] on F.Cu, length 1.2742 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(168.8500 mm, 107.5000 mm): Pad 1 [bo] of D13 on B.Cu
+    @(168.8500 mm, 107.5000 mm): Track [bo] on F.Cu, length 1.2742 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.8500 mm, 98.0000 mm): Pad 1 [ho] of D2 on F.Cu
+    @(92.8500 mm, 98.0000 mm): Pad 1 [ho] of D2 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.8500 mm, 79.0000 mm): Pad 1 [ho] of D5 on B.Cu
+    @(111.8500 mm, 79.0000 mm): Track [ho] on F.Cu, length 14.2500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.8500 mm, 74.2500 mm): Pad 1 [ho] of D8 on B.Cu
+    @(126.1000 mm, 79.0000 mm): Track [ho] on F.Cu, length 6.7175 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.8500 mm, 83.7500 mm): Pad 1 [ho] of D11 on F.Cu
+    @(149.8500 mm, 83.7500 mm): Pad 1 [ho] of D11 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(168.8500 mm, 88.5000 mm): Pad 1 [ho] of D14 on B.Cu
+    @(167.9500 mm, 89.4000 mm): Track [ho] on F.Cu, length 1.2728 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.8500 mm, 79.0000 mm): Pad 1 [to] of D3 on B.Cu
+    @(94.1610 mm, 77.6890 mm): Track [to] on F.Cu, length 1.8540 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.8500 mm, 60.0000 mm): Pad 1 [to] of D6 on F.Cu
+    @(111.8500 mm, 60.0000 mm): Pad 1 [to] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.8500 mm, 55.2500 mm): Pad 1 [to] of D9 on F.Cu
+    @(130.8500 mm, 55.2500 mm): Pad 1 [to] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.8500 mm, 64.7500 mm): Pad 1 [to] of D12 on B.Cu
+    @(149.8500 mm, 64.7500 mm): Track [to] on F.Cu, length 1.2742 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(168.8500 mm, 69.5000 mm): Pad 1 [to] of D15 on B.Cu
+    @(168.8500 mm, 69.5000 mm): Track [to] on F.Cu, length 1.2742 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.8500 mm, 126.5000 mm): Pad 1 [th] of D16 on F.Cu
+    @(149.8500 mm, 126.5000 mm): Pad 1 [th] of D16 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(170.8231 mm, 130.6751 mm): Pad 1 [th] of D17 on B.Cu
+    @(170.3332 mm, 131.1650 mm): Track [th] on F.Cu, length 0.6928 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(190.3653 mm, 141.6481 mm): Pad 1 [th] of D18 on F.Cu
+    @(190.3653 mm, 141.6481 mm): Pad 1 [th] of D18 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(187.3650 mm, 119.5000 mm): Track [BAT_P] on B.Cu, length 0.4000 mm
+    @(187.7650 mm, 119.5000 mm): Track [BAT_P] on F.Cu, length 10.5345 mm
+
+** Found 0 Footprint errors **
+
+** End of Report **

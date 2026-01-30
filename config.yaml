@@ -106,7 +106,6 @@ outlines:
     - what: rectangle
       where: [key]
       size: 18
-      fillet: 3
   _board:
     - what: polygon
       operation: stack
@@ -151,6 +150,27 @@ outlines:
     - what: circle
       where: [screw]
       radius: 4.3/2
+  _keyholes:
+    - what: rectangle
+      where: [key]
+      size: 14
+  _mcu:
+    - what: rectangle
+      where: [mcu]
+      size: [18,33]
+  plate:
+    - name: _board
+  screwholes:
+    - name: _screws
+  layout:
+    - what: rectangle
+      where: [key]
+      size: 18
+      fillet: 2
+      operation: stack
+    - what: outline
+      name: _board
+      operation: stack
   preview:
     - what: outline
       name: _board
@@ -158,6 +178,7 @@ outlines:
     - what: rectangle
       where: [mcu]
       size: [18,33]
+      operation: stack
     - what: outline
       name: _screws
       operation: stack
@@ -247,5 +268,3 @@ pcbs:
         params:
           hole_size: 4.6
           hole_drill: 2.2
-
-cases:

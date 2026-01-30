@@ -12,11 +12,13 @@
 
 # PCB
 
-You can find the custom designed PCB [here](./pcbs)
+![null36 pcb](./pcbs/pcb.png)
+
+You can find the gerber [here](./pcbs)
 
 # Case
 
-You can use the board without a case, but [here](./cases) is a minimal design that I use.
+You can use the board without a case, but [here](./cases) is the one I designed
 
 # Photos
 

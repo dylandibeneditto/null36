@@ -10,46 +10,46 @@ points:
       anchor:
         shift: [150, -150] # Fix KiCad placement
       columns:
-        pin:
+        PIN:
           key:
-        ri:
+        RIN:
           key:
             stagger: u
-        mi:
+        MID:
           key:
             stagger: u/4
-        ind:
+        IND:
           key:
             stagger: -u/2
-        inn:
+        INN:
           key:
             stagger: -u/4
       rows:
-        bo:
-        ho:
-        to:
+        BOT:
+        HOM:
+        TOP:
     thumbfan:
       anchor:
-        ref: matrix_inn_bo
+        ref: matrix_INN_BOT
         shift: [-u,-u]
       columns:
-        ind:
-        inn:
+        MID:
+        IND:
           key.rotate: -15
           key.stagger: -u/8
           key.spread: 22
-        far:
+        INN:
           key.rotate: -30
           key.stagger: -u/2
           key.spread: 21
       rows:
-        th:
+        THU:
     mcu:
       key.tags:
         - helper
         - mcu
       anchor:
-        - ref: matrix_inn_to
+        - ref: matrix_INN_TOP
           shift: [u+2, -u/2+p+1]
 
     screw_1:
@@ -58,24 +58,24 @@ points:
         - screw
       anchor:
         aggregate.parts:
-          - ref: matrix_pin_bo
-          - ref: matrix_ri_bo
+          - ref: matrix_PIN_BOT
+          - ref: matrix_RIN_BOT
     screw_2:
       key.tags:
         - helper
         - screw
       anchor:
         aggregate.parts:
-          - ref: matrix_ri_ho
-          - ref: matrix_mi_to
+          - ref: matrix_RIN_HOM
+          - ref: matrix_MID_TOP
     screw_3:
       key.tags:
         - helper
         - screw
       anchor:
         aggregate.parts:
-          - ref: thumbfan_far_th
-          - ref: thumbfan_inn_th
+          - ref: thumbfan_INN_THU
+          - ref: thumbfan_IND_THU
         shift: [0,u/2]
     screw_4:
       key.tags:
@@ -83,8 +83,8 @@ points:
         - screw
       anchor:
         aggregate.parts:
-          - ref: matrix_inn_to
-          - ref: matrix_inn_ho
+          - ref: matrix_INN_TOP
+          - ref: matrix_INN_HOM
         shift: [u/2-2,0]
     screw_5:
       key.tags:
@@ -92,7 +92,7 @@ points:
         - screw
       anchor:
         aggregate.parts:
-          - ref: matrix_ind_bo
+          - ref: matrix_IND_BOT
         shift: [-u/2,-u/2]
 
 
@@ -111,39 +111,39 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        - ref: matrix_pin_to
+        - ref: matrix_PIN_TOP
           shift: [-o, o]
-        - ref: matrix_pin_bo
+        - ref: matrix_PIN_BOT
           shift: [-o, -o]
-        - ref: matrix_pin_bo
+        - ref: matrix_PIN_BOT
           shift: [3o, -o]
-        - ref: thumbfan_ind_th
+        - ref: thumbfan_MID_THU
           shift: [-o,-o]
-        - ref: thumbfan_far_th
+        - ref: thumbfan_INN_THU
           shift: [-o,-o]
-        - ref: thumbfan_far_th
+        - ref: thumbfan_INN_THU
           shift: [o,-o]
-        - ref: thumbfan_far_th
+        - ref: thumbfan_INN_THU
           shift: [o,o]
         - ref: mcu
           shift: [o,-5o]
         - ref: mcu
           shift: [o, o+4.5+p]
-        - ref: matrix_inn_to
+        - ref: matrix_INN_TOP
           shift: [-o+p, o]
-        - ref: matrix_ind_to
+        - ref: matrix_IND_TOP
           shift: [o,o]
-        - ref: matrix_ind_to
+        - ref: matrix_IND_TOP
           shift: [-o+p,o]
-        - ref: matrix_mi_to
+        - ref: matrix_MID_TOP
           shift: [o,o]
-        - ref: matrix_mi_to
+        - ref: matrix_MID_TOP
           shift: [-o,o]
-        - ref: matrix_ri_to
+        - ref: matrix_RIN_TOP
           shift: [o-p,o]
-        - ref: matrix_ri_to
+        - ref: matrix_RIN_TOP
           shift: [-o,o]
-        - ref: matrix_pin_to
+        - ref: matrix_PIN_TOP
           shift: [o-p,o]
         
       fillet: 2
@@ -197,34 +197,25 @@ pcbs:
         where: mcu
         params:
           reversible: true
-          side: "F"
-          SDA: DA
-          SCL: CL
+          SDA: SDA
+          SCL: SCL
         adjust:
           shift: [0,-4]
       mcu:
         what: ceoloide/mcu_supermini_nrf52840
         where: mcu
         params:
-          reversible: true
-          only_required_jumpers: true
-          use_rectangular_jumpers: false
-          P10: "th"
-          P3: "to"
-          P4: "ho"
-          P5: "bo"
-          P2: "pin"
-          P15: "mi"
-          P18: "ri"
-          P16: "ind"
-          P8: "inn"
-          P9: "far"
-          P6: "DA"
-          P7: "CL"
-          P14: "CS"
-          P19_label: " "
-          P20_label: " "
-          P21_label: " "
+          P2: "PIN"
+          P3: "RIN"
+          P4: "MID"
+          P5: "IND"
+          P6: "INN"
+          P7: "TOP"
+          P8: "HOM"
+          P9: "BOT"
+          P10: "THU"
+          P16: "SDA"
+          P14: "SCL"
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: mcu
@@ -256,3 +247,5 @@ pcbs:
         params:
           hole_size: 4.6
           hole_drill: 2.2
+
+cases:

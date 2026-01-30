@@ -14,11 +14,14 @@
 
 ![null36 pcb](./pcbs/pcb.png)
 
-You can find the gerber [here](./pcbs)
+[/pcbs](./pcbs)
+> This PCB is reversible. When assembling, solder together the pads above the OLED display header, the pads next to the battery jack (the jack goes on the underside of the pcb)
 
 # Case
 
-You can use the board without a case, but [here](./cases) is the one I designed
+![null36 case](./pcbs/cases.PNG)
+
+[/cases](./cases)
 
 # Photos
 

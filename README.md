@@ -25,4 +25,4 @@
 
 # Photos
 
-[Assembly picture](./outlines/assembly.jpeg)
+![Assembly picture](./outlines/assembly.jpeg)

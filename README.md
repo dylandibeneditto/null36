@@ -6,7 +6,7 @@
 
 36-Key wireless split ortho column-staggered MX keyboard. Controlled by any Nice!Nano V2 compatible MCU, and support for SSD1306 OLED displays.
 
-# Layout
+# Layout and Keymap
 
 ![null36 layout](./outlines/layout.svg)
 
@@ -25,4 +25,4 @@
 
 # Photos
 
-Work in progress
+[Assembly picture](./outlines/assembly.jpeg)

@@ -38,3 +38,5 @@ gerber/
 # Order files
 order/
 .idea/
+
+components.md
